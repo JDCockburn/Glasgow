@@ -39,6 +39,7 @@ class LinearTimeSeries(TimeSeries):
         self.data.sort()
     
     def get(self, x):
+	"""Do some linear interpolation between points"""
         # if it's out of range to the left,
         # return the first value
         if x < self.data[0][0]:
