@@ -30,7 +30,7 @@ class StepFunctionTimeSeries(TimeSeries):
         return closest_point[1]
 
 class LinearTimeSeries(TimeSeries):
-    '''This is most definitely another class mate'''
+    '''This is most definitely another class mate. Ayit'''
     def __init__(self, data):
         TimeSeries.__init__(self, data)
         self.data.sort()
