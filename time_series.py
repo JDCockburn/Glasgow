@@ -1,9 +1,12 @@
+# Chris waz hear
+
 class TimeSeries(object):
     """This is a class."""
     def __init__(self, data):
         self.data = data
     
     def get(self, x):
+        """Get stuff innit!"""
         for (xi,yi) in self.data:
             if xi == x:
                 return yi
