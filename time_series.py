@@ -1,3 +1,5 @@
+# Chris waz hear
+
 class TimeSeries(object):
     '''It's well a class, yo '''
     def __init__(self, data):
