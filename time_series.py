@@ -1,11 +1,12 @@
 # Chris waz hear
 
 class TimeSeries(object):
-    '''It's well a class, yo '''
+    """This is a class."""
     def __init__(self, data):
         self.data = data
     
     def get(self, x):
+        """Get stuff innit!"""
         for (xi,yi) in self.data:
             if xi == x:
                 return yi
@@ -32,12 +33,13 @@ class StepFunctionTimeSeries(TimeSeries):
         return closest_point[1]
 
 class LinearTimeSeries(TimeSeries):
-    '''This is most definitely another class mate. Ayit'''
+    """Another class"""
     def __init__(self, data):
         TimeSeries.__init__(self, data)
         self.data.sort()
     
     def get(self, x):
+	"""Do some linear interpolation between points"""
         # if it's out of range to the left,
         # return the first value
         if x < self.data[0][0]:
